@@ -30,7 +30,7 @@ Rates.init(
   },
   {
     sequelize: database,
-    tableName: 'PhonePlans',
+    tableName: 'rates',
     timestamps: false,
     underscored: true,
   }

@@ -25,7 +25,7 @@ PhonePlans.init(
   },
   {
     sequelize: database,
-    tableName: 'PhonePlans',
+    tableName: 'phone_plans',
     timestamps: false,
   }
 );
