@@ -5,7 +5,8 @@
   "main": "./build/server",
   "scripts": {
     "test": "mocha -r ts-node/register ./src/tests/*$NAME*.{test,spec}.ts -t 10000 --exit",
-    "dev": "ts-node-dev ./src/server.ts"
+    "dev": "ts-node-dev ./src/server.ts",
+    "start": "node ./build/server.js"
   },
   "author": "",
   "license": "ISC",
