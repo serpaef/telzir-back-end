@@ -5,6 +5,6 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`Listening on ${ PORT }`)
 });
