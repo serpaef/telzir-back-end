@@ -2,12 +2,9 @@ import Rates from '../database/models/Rates';
 
 class RatesService {
   static async getAll() {
-    try {
-      const plans: Rates[] = await Rates.findAll();
-      return plans;
-    } catch (err) {
-      console.log(err.message)
-    }
+    // I thought it would be better to let the exception be thrown, and handle it in the controller 
+    const plans: Rates[] = await Rates.findAll();
+    return plans;
   }
 }
 
