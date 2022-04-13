@@ -15,7 +15,7 @@ module.exports = {
       },
       minutes: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
       },
     });
   },
