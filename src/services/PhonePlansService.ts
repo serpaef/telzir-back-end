@@ -10,3 +10,5 @@ class PhonePlansService {
     }
   }
 }
+
+export default PhonePlansService
