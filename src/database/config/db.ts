@@ -1,10 +1,12 @@
-import { Sequelize } from 'sequelize';
-import 'dotenv/config';
-
-const { DB_USER, DB_PASS, DB_NAME, DB_HOST, DB_PORT } = process.env;
-
-export const database = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
+module.exports = {
+  username: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || '123456',
+  database: process.env.DB_NAME || 'TELZIR',
+  host: process.env.DB_HOST || 'localhost',
+  port: process.env.DB_PORT || '3002',
   dialect: 'mysql',
-  host: DB_HOST,
-  port: +DB_PORT,
-});
+  dialectOptions: {
+    timezone: 'Z',
+  },
+  logging: false,
+};
